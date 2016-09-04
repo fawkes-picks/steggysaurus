@@ -4,7 +4,6 @@ os.system('cls' if os.name == 'nt' else 'clear')
 
 ans=True
 while ans:
-    print("Run this script in the same directory as your desired files.")
     print
     print ('====================================')
     print ('#           STEGANOGRAPHY          #')
@@ -24,7 +23,7 @@ while ans:
       print
       embedfile=input('Enter the name of the file you want to embed: ')
       print
-      os.system('steghide embed -cf ' + coverfile + '-ef ' + embedfile)
+      os.system('steghide embed -cf ' + coverfile + ' -ef ' + embedfile)
 
     elif ans == '3':
        stegfile=input('Enter the name of the file you want to extract from: ')
